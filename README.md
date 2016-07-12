@@ -1,8 +1,6 @@
-
 # slackin
 
-A little server that enables public access
-to a Slack server. Like Freenode, but on Slack.
+A little server that enables public access to a Slack server. Like Freenode, but on Slack.
 
 It provides
 
@@ -58,8 +56,8 @@ Usage: slackin [options] <team-id> <api-token>
 
 Options:
 
-  -h, --help                 output usage information
-  -V, --version              output the version number
+  -?, --help                 output usage information
+  -v, --version              output the version number
   -p, --port <port>          Port to listen on [$PORT or 3000]
   -h, --hostname <hostname>  Hostname to listen on [$HOSTNAME or 0.0.0.0]
   -c, --channels [<chan>]    One or more comma-separated channel names to allow single-channel guests [$SLACK_CHANNELS]
@@ -136,8 +134,8 @@ By default logging is enabled.
 
 ## Developing
 
-Slackin's server side code is written in ES6. It uses babel to transpile the 
-ES6 code to a format node understands. After cloning Slackin, you should 
+Slackin's server side code is written in ES6. It uses babel to transpile the
+ES6 code to a format node understands. After cloning Slackin, you should
 install the prerequisite node libraries with npm:
 
 ```bash
@@ -145,7 +143,7 @@ $ npm install
 ```
 
 After the libraries install, the postinstall script will run `gulp` to invoke
-babel on the source. It is important to run `gulp` manually after updating any 
+babel on the source. It is important to run `gulp` manually after updating any
 files in lib/ to update the versions in node/.
 
 ## Credits
